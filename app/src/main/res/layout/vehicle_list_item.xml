@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:background="@android:color/white"
+    android:elevation="2dp">
+
+    <ImageView
+        android:id="@+id/vehicleTypeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@id/vehicleIdTitle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_taxi" />
+
+    <TextView
+        android:id="@+id/fleetType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@id/vehicleTypeImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/vehicleTypeImage"
+        app:layout_constraintTop_toTopOf="@id/vehicleTypeImage"
+        tools:text="Taxi" />
+
+    <TextView
+        android:id="@+id/vehicleIdTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/id"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBaseline_toBaselineOf="@id/vehicleId"
+        app:layout_constraintStart_toStartOf="@id/fleetType" />
+
+    <TextView
+        android:id="@+id/vehicleId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@id/vehicleAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/vehicleIdTitle"
+        app:layout_constraintTop_toBottomOf="@id/fleetType"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="615000" />
+
+    <TextView
+        android:id="@+id/vehicleAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/vehicleIdTitle"
+        app:layout_constraintTop_toBottomOf="@id/vehicleId"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="221B Baker Street" />
+</androidx.constraintlayout.widget.ConstraintLayout>

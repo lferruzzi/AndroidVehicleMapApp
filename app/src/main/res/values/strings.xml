@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">VehicleListMap</string>
+    <string name="title_main_activity">VehicleListMap</string>
+    <string name="id">id:</string>
+    <string name="vehicleListTitle">Available vehicles</string>
+    <string name="requestErrorMessage">Failed to fetch the vehicles</string>
+    <string name="google_api_key">stub_censored_string available on the private repository</string>
+</resources>
